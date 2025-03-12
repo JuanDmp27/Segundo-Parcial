@@ -1,0 +1,252 @@
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente por defecto */
+}
+h2 {
+    font-family: 'Big Shoulders Display', sans-serif; /* Aplicar la fuente Big Shoulders a los encabezados */
+}
+.card-title {
+    font-family: 'Big Shoulders Display', sans-serif; /* Aplicar la fuente Big Shoulders a los títulos de las tarjetas */
+}
+
+
+body {
+    font-family: 'Arial', sans-serif; /* Fuente por defecto */
+    background-color: #f8f9fa; /* Color de fondo claro */
+    color: #212529; /* Color de texto oscuro */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para el modo oscuro */
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', sans-serif; /* Fuente para encabezados */
+}
+
+.card-title {
+    font-family: 'Big Shoulders Display', sans-serif; /* Fuente para títulos de tarjetas */
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #343a40; /* Color de fondo oscuro */
+    color: #f8f9fa; /* Color de texto claro */
+}
+
+.navbar {
+    transition: background-color 0.3s; /* Transición suave para la barra de navegación */
+}
+
+.navbar-dark {
+    background-color: #212529; /* Color de fondo de la barra de navegación en modo claro */
+}
+
+body.dark-mode .navbar-dark {
+    background-color: #495057; /* Color de fondo de la barra de navegación en modo oscuro */
+}
+
+.nav-link {
+    color: #f8f9fa; /* Color de texto de los enlaces */
+}
+
+body.dark-mode .nav-link {
+    color: #adb5bd; /* Color de texto de los enlaces en modo oscuro */
+}
+
+.carousel-caption h5 {
+    font-family: 'Big Shoulders Display', sans-serif; /* Fuente para títulos del carrusel */
+    font-size: 1.5rem; /* Tamaño de fuente para títulos */
+}
+
+.carousel-caption p {
+    font-family: 'Arial', sans-serif; /* Fuente para descripciones del carrusel */
+    font-size: 1rem; /* Tamaño de fuente para descripciones */
+}
+
+/* Estilos para botones */
+.btn {
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para botones */
+}
+
+body.dark-mode .btn {
+    background-color: #495057; /* Color de fondo de botones en modo oscuro */
+    color: #f8f9fa; /* Color de texto de botones en modo oscuro */
+}
+
+body.dark-mode .btn:hover {
+    background-color: #6c757d; /* Color de fondo de botones al pasar el mouse en modo oscuro */
+}
+
+/* Estilos para el contenedor principal */
+#principal {
+    padding: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #212529; /* Color de fondo del pie de página */
+    color: #f8f9fa; /* Color de texto del pie de página */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* carrucel con html2 */
+.carousel-caption h5 {
+    font-family: 'Big Shoulders Display', sans-serif; /* Aplicar la fuente Big Shoulders a los títulos del carrusel */
+    font-size: 1.5rem; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.carousel-caption p {
+    font-family: 'Arial', sans-serif; /* Puedes mantener la fuente por defecto o cambiarla */
+    font-size: 1rem; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.container {
+    padding: 20px;
+}
+
+.img-fluid {
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 15px; /* Space below each image */
+}
+
+.album-image {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del ancho de la columna */
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción y se recorte si es necesario */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+/* icono de las redes */
+.social-icons {
+    margin-top: 20px; /* Espacio superior para separar el ícono del texto */
+}
+
+.social-icons a {
+    display: inline-block; /* Asegúrate de que el enlace se comporte como un bloque en línea */
+}
+
+.social-icons i {
+    transition: transform 0.3s; /* Transición suave para el efecto hover */
+}
+
+.social-icons i:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del ícono al pasar el mouse */
+}
+
+/* Catalogo */
+
+body {
+    font-family: 'Arial', sans-serif; /* Fuente por defecto */
+}
+h2 {
+    font-family: 'Big Shoulders Display', sans-serif; /* Aplicar la fuente Big Shoulders a los encabezados */
+}
+.card-title {
+    font-family: 'Big Shoulders Display', sans-serif; /* Aplicar la fuente Big Shoulders a los títulos de las tarjetas */
+}
+.price {
+    position: relative;
+    display: inline-block; /* Asegura que el precio y el botón estén en línea */
+}
+.add-to-cart {
+    display: none; /* Ocultar el botón por defecto */
+    margin-top: 5px; /* Espacio entre el precio y el botón */
+}
+.price:hover .add-to-cart {
+    display: block; /* Mostrar el botón al pasar el ratón sobre el precio */
+}
+.total {
+    font-weight: bold;
+    margin-top: 20px;
+}
+.buy-button {
+    display: none; /* Ocultar el botón de compra por defecto */
+}
+
+
+/* Estilos generales para la sección de contacto */
+#contacto {
+    background-color: #f8f9fa; /* Color de fondo claro */
+    padding: 40px 0; /* Espaciado superior e inferior */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+#contacto h2 {
+    font-family: 'Big Shoulders Display', cursive; /* Fuente personalizada */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+#contacto p {
+    margin-bottom: 30px; /* Espaciado inferior */
+}
+
+/* Estilos para el formulario */
+.form-label {
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para el modal */
+.modal-content {
+    border-radius: 8px; /* Bordes redondeados para el modal */
+}
+
+.modal-header {
+    background-color: #007bff; /* Color de fondo del encabezado del modal */
+    color: white; /* Color del texto del encabezado */
+}
+
+.modal-footer {
+    border-top: none; /* Sin borde superior en el pie del modal */
+}
+
+/* Estilos para el checkbox */
+.form-check-label a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.form-check-label a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Estilos para el modo oscuro */
+body.dark-mode {
+    background-color: #121212; /* Color de fondo oscuro */
+    color: #ffffff; /* Color de texto claro */
+}
+
+body.dark-mode #contacto {
+    background-color: #1e1e1e; /* Fondo oscuro para la sección de contacto */
+}
+
+body.dark-mode .modal-content {
+    background-color: #2c2c2c; /* Fondo oscuro para el modal */
+    color: #ffffff; /* Color de texto claro en el modal */
+}
+
+body.dark-mode .modal-header {
+    background-color: #007bff; /* Mantener el color del encabezado del modal */
+    color: white; /* Color del texto del encabezado */
+}
+
+body.dark-mode .btn-primary {
+    background-color: #0056b3; /* Color del botón en modo oscuro */
+}
+
+body.dark-mode .form-check-label a {
+    color: #007bff; /* Color del enlace en modo oscuro */
+}
