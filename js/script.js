@@ -7,21 +7,48 @@ toggleButton.addEventListener('click', () => {
 
 // Carrito
 
-let total = 0;
+let cart = [];
+let totalAmount = 0;
 
 function addToCart(price) {
-    total += price;
-    document.getElementById('total-amount').innerText = 'Total: $' + total.toFixed(2);
-    document.getElementById('buy-button').style.display = 'block';
+    cart.push(price);
+    totalAmount += price;
+    updateCartDisplay();
+}
+
+function removeFromCart(index) {
+    totalAmount -= cart[index];
+    cart.splice(index, 1);
+    updateCartDisplay();
+}
+
+function updateCartDisplay() {
+    const cartItemsDiv = document.getElementById('cart-items');
+    cartItemsDiv.innerHTML = ''; // Limpiar el contenido actual
+
+    cart.forEach((price, index) => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'cart-item';
+        itemDiv.innerHTML = `
+            Producto ${index + 1}: $${price.toFixed(2)} 
+            <button class="btn btn-danger btn-sm" onclick="removeFromCart(${index})">Eliminar</button>
+        `;
+        cartItemsDiv.appendChild(itemDiv);
+    });
+
+    document.getElementById('total-amount').innerText = `Total: $${totalAmount.toFixed(2)}`;
 }
 
 function buy() {
-    alert('Gracias por tu compra! Total: $' + total.toFixed(2));
-    total = 0;
-    document.getElementById('total-amount').innerText = 'Total: $0.00';
-    document.getElementById('buy-button').style.display = 'none';
+    if (cart.length === 0) {
+        alert("Tu carrito está vacío.");
+        return;
+    }
+    alert(`Compra realizada por un total de $${totalAmount.toFixed(2)}`);
+    // Aquí puedes agregar la lógica para procesar la compra
+    cart = []; // Vaciar el carrito
+    totalAmount = 0;
+    updateCartDisplay();
 }
-
-
 
 
